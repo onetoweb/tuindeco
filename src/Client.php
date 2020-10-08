@@ -55,7 +55,7 @@ class Client
         
         curl_close($curl);
         
-        return json_decode($response);
+        return json_decode($response, true);
     }
     
     /**
