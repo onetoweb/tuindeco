@@ -40,7 +40,7 @@ class Client
         $curl = curl_init();
         
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://feed.tuindeco.shop/json/full/",
+            CURLOPT_URL => "https://feed.tuindeco.shop/versions/1.1/json/full/",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
