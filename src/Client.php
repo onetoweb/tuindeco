@@ -33,9 +33,9 @@ class Client
     /**
      * Get products.
      * 
-     * @return \stdClass
+     * @return null|array
      */
-    public function getProducts(): \stdClass
+    public function getProducts(): ?array
     {
         $curl = curl_init();
         
@@ -63,9 +63,9 @@ class Client
      * 
      * @param array $order
      * 
-     * @return \stdClass
+     * @return null|array
      */
-    public function createOrder(array $order): \stdClass
+    public function createOrder(array $order): ?array
     {
         $order['apikey'] = $this->apiKey;
         $order['secret'] = $this->secret;
@@ -88,6 +88,6 @@ class Client
         
         curl_close($curl);
         
-        return json_decode($response);
+        return json_decode($response, true);
     }
 }
