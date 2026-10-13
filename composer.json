@@ -1,0 +1,31 @@
+{
+    "name": "onetoweb/tuindeco",
+    "description": "Tuindeco API Client",
+    "keywords": [
+        "api",
+        "php",
+        "tuindeco"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/onetoweb/tuindeco",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan van 't Ende",
+            "email": "jvantende@onetoweb.nl"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle" : "^7.0 || ^8.0",
+        "symfony/http-foundation": "^5.0 || ^6.0 || ^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "symfony/error-handler": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Onetoweb\\Tuindeco\\": "src/"
+        }
+    }
+}
